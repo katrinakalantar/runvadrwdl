@@ -18,14 +18,14 @@ We then use the docker image to run the pipeline as follows:
 Here we run it for a single test sample (one file within a .fasta)
 
 ```
-miniwdl run --verbose runvadrwdl/run.wdl docker_image_id=vadr-img assembly=EPI_ISL_869160.consensus.fasta
+miniwdl run --verbose runvadrwdl/run.wdl docker_image_id=vadr-img assembly=runvadrwdl/test_files/EPI_ISL_869155.consensus.fasta
 ```
 
 
 We can also run it with a .fasta files containing multiple inputs:
 
 ```
-miniwdl run --verbose runvadrwdl/run.wdl docker_image_id=vadr-img assembly=test_multiple_assemblies.fasta
+miniwdl run --verbose runvadrwdl/run.wdl docker_image_id=vadr-img assembly=runvadrwdl/test_files/test_multiple_assemblies.fasta
 ```
 
 
